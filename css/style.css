@@ -1,8 +1,8 @@
 /*
 * @Author: Lenovo
 * @Date:   2020-07-15 16:21:03
-* @Last Modified by:   Lenovo
-* @Last Modified time: 2020-07-16 15:38:48
+* @Last Modified by:   Xinrui-Fang
+* @Last Modified time: 2020-07-17 10:51:55
 */
 
 /*import fonts from google fonts*/
@@ -77,4 +77,96 @@ header .site-title{
 
 .navbar-nav .basket-icon{
 	margin-right: 6.5rem !important;
+}
+
+/*Slider one*/
+.site-slider{
+	position: relative;
+}
+
+.position-top{
+	position: absolute;
+	top: 50%;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+	background-color: var(--primary-color);
+	padding: 1rem 1.5rem;
+	border-radius: 10rem;
+	color: white;
+	margin: 0.1rem;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+	opacity: 1;
+
+}
+
+.right-0{
+	right: 0;
+}
+
+/*SLick Dots*/
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+}
+
+.slick-dots li{
+	margin: 0 0.6rem;
+}
+
+.slick-dots button{
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	padding: 0;
+	border: none;
+	background-color: white;
+	text-indent: -99999px;
+	border-radius: 100%;
+}
+
+.slick-dots li.slick-active button{
+	transform: scale(2.5);
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.205);
+}
+
+/*second slider*/
+.site-slider-two{
+	position: relative;
+	height: 30%;
+}
+
+.site-slider-two .product{
+	height: 25rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.site-slider-two .product img{
+	width: 90%;
+	margin: auto;
+}
+
+.site-btn.btn-span{
+	padding: 0.8rem 1,9rem;
+	border-radius: 4rem;
+	border: 1px solid var(--border);
+	background-color: white;
+	color: var(--light-gray);
+}
+
+.slider-two .slick-track .product:hover span{
+	background-color: var(--primary-color);
 }
